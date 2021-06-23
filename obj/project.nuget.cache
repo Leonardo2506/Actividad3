@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "goXa5L80J1Qik93pryuwE70pUyfWXri4onCYJeq7zchyynaE3hbaehMX1/8lR8O2H9b0Jl7xASRqKjpcKsKTLA==",
+  "success": true,
+  "projectFilePath": "E:\\usuarios\\alumno\\Documentos\\6° 7ma\\Farfan Leonardo-20210602T000511Z-001\\Farfan Leonardo\\Actividad3\\Actividad3\\Actividad3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alumno\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\alumno\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\alumno\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}
