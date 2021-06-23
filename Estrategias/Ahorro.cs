@@ -1,23 +1,25 @@
 using System; 
 using System.Collections.Generic;
 using System.Text;
+using Actividad3; 
 
 namespace  Actividad3.Estrategias
 {
-    public class Ahorro 
+    public class Ahorro : IEstrategia
     {
-        public void Acreditar(double monto)
+        public void Acreditar(Cliente cliente, double monto)
         {
-            Efectivo = Efectivo + monto * 0.5;
+            cliente.Efectivo += monto * 0.5;
 
-            Cuenta.acreditar(monto * 0.5);
+            cliente.Cuenta.acreditar(monto * 0.5);
         }
 
-        public void Debitar(double monto)
+        public void Debitar(Cliente cliente, double monto)
         {
-            Efectivo = Efectivo - monto * 0.5;
+            if(cliente.TieneAlMenos(monto))
+        }  
 
-            Cuenta.debitar(monto * 0.5);
-        }
+        public bool EsApto(Cliente cliente) => cliente.Efectivo > 50000; 
+
     }
 }

@@ -14,7 +14,7 @@ namespace  Actividad3
 
         public Cuenta Cuenta { get; set; }
 
-        public Estrategia IEstrategia {get; set;}
+        public IEstrategia Estrategia {get; set;}
 
         public Cliente()
         {
@@ -27,17 +27,15 @@ namespace  Actividad3
 
         public void Acreditar(double monto) 
         {
-            Efectivo = Efectivo + monto * 0.8;
-
-            Cuenta.acreditar(monto * 0.2);
         } 
 
         public void Debitar(double monto)
         {
-            Efectivo = Efectivo - monto * 0.8;
-
-            Cuenta.debitar(monto * 0.2);
         }
+
+        public void AcreditarEfectivo(double monto) => Efectivo += monto;
+
+        public void DebitarEfectivo(double monto) => Efectivo -= monto;
 
         public bool TieneAlMenos(double monto) => Saldo >= monto;
     }

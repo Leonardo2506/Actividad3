@@ -1,23 +1,27 @@
 using System; 
 using System.Collections.Generic;
 using System.Text;
+using Actividad3;
 
 namespace  Actividad3.Estrategias
 {
-    public class Cauto 
+    public class Cauto : IEstrategia 
     {
-        public void Acreditar(double monto)
+        public void Acreditar(Cliente cliente, double monto)
         {
-            Efectivo = Efectivo + monto * 0.8;
+            cliente.AcreditarEfectivo(monto * 0.8);
 
-            Cuenta.acreditar(monto * 0.2);
+            cliente.Cuenta.acreditar(monto * 0.2);
         }
 
-        public void Debitar(double monto)
+        public void Debitar(Cliente cliente, double monto)
         {
-            Efectivo = Efectivo - monto * 0.8; 
+            cliente.DebitarEfectivo(monto * 0.8); 
 
-            Cuenta.debitar(monto * 0.2);
+            cliente.Cuenta.debitar(monto * 0.2);
         }
+
+        public bool EsApto(Cliente cliente)
+            => cliente.Efectivo >= 10000 && cliente.Efectivo <= 50000;  
     }
 }

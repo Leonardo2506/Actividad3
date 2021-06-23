@@ -1,7 +1,3 @@
-using System; 
-using System.Collections.Generic;
-using System.Text;
-
 namespace Actividad3.Estrategias
 {
     public interface IEstrategia
@@ -10,6 +6,6 @@ namespace Actividad3.Estrategias
 
         void Acreditar (Cliente cliente, double monto);
 
-        void EsApto (Cliente cliente);
+        bool EsApto (Cliente cliente);
     }
 }

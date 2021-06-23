@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Actividad2
+namespace Actividad3
 {
     public class Cuenta
     {
@@ -34,7 +34,7 @@ namespace Actividad2
 
         public bool TieneAlMenos(double monto) => Saldo >= monto;
 
-        internal double VaciarCuenta(double Saldo)
+        internal double VaciarCuenta()
         {
             var saldo = this.Saldo;
             Saldo = 0; 
