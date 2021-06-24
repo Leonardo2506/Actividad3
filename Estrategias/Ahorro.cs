@@ -9,7 +9,7 @@ namespace  Actividad3.Estrategias
     {
         public void Acreditar(Cliente cliente, double monto)
         {
-            cliente.Efectivo += monto * 0.5;
+            cliente.AcreditarEfectivo (monto * 0.5);
 
             cliente.Cuenta.acreditar(monto * 0.5);
         }
@@ -17,6 +17,9 @@ namespace  Actividad3.Estrategias
         public void Debitar(Cliente cliente, double monto)
         {
             if(cliente.TieneAlMenos(monto))
+            {
+
+            }
         }  
 
         public bool EsApto(Cliente cliente) => cliente.Efectivo > 50000; 
