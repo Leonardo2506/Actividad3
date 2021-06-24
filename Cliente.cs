@@ -12,7 +12,7 @@ namespace  Actividad3
 
         public double Efectivo {get; internal set;} = 0;
 
-        public Cuenta Cuenta { get; set; }
+        public Cuenta Cuenta { get; set;}
 
         public IEstrategia Estrategia {get; set;}
 
@@ -21,7 +21,7 @@ namespace  Actividad3
             Cuenta = new Cuenta(); 
         }
 
-        public double Saldo => Efectivo + Cuenta.saldo;
+        public double Saldo => Efectivo + Cuenta.Saldo;
 
         public int Cbu => Cuenta.Cbu;
 
@@ -38,5 +38,12 @@ namespace  Actividad3
         public void DebitarEfectivo(double monto) => Efectivo -= monto;
 
         public bool TieneAlMenos(double monto) => Saldo >= monto;
+
+        internal double VaciarEfectivo()
+        {
+            var efectivo = this.Efectivo; 
+            Efectivo = 0; 
+            return efectivo; 
+        }
     }
 }

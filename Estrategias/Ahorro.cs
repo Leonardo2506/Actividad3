@@ -18,7 +18,12 @@ namespace  Actividad3.Estrategias
         {
             if(cliente.TieneAlMenos(monto))
             {
-
+                cliente.DebitarEfectivo(monto);
+            }
+            else
+            {
+                monto -= cliente.VaciarEfectivo();
+                cliente.Cuenta.debitar(monto); 
             }
         }  
 
