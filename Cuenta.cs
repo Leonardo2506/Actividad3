@@ -24,7 +24,7 @@ namespace Actividad3
 
         public void acreditar(double monto)
         {
-            Saldo = Saldo + monto;
+            Saldo = Saldo + monto; 
         }
 
         public void debitar(double monto)
