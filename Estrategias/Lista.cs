@@ -17,6 +17,8 @@ namespace Actividad3
                 new Emergencia()
             };
 
+            public IEstrategia EstrategiaPura(Cliente cliente); 
+
         }
 }
     
