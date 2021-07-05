@@ -7,16 +7,15 @@ namespace Actividad3
 {
     public class Lista 
         { 
-            public Lista()
+            List<IEstrategia> Estra = new List<IEstrategia>()
             {
-                Ahorro ahorro = new Ahorro();
+                new Ahorro(),
 
-                Cauto cauto = new Cauto(); 
+                new Cauto(),
 
-                Emergencia emergencia = new Emergencia(); 
-            }
+                new Emergencia()
+            };
 
-            List<Lista> Estra = new List<Lista>(){ahorro, cauto, emergencia}; 
         }
 }
     
