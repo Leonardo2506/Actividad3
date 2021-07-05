@@ -18,8 +18,11 @@ namespace Actividad3
             };
 
             public IEstrategia EstrategiaPara(Cliente cliente); 
-
-            void first = EstrategiaPara.FirstOrDefault ();
+            {
+                void first = EstrategiaPara.FirstOrDefault ();
+            }
+            
+            
             
             
             
