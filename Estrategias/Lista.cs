@@ -17,7 +17,12 @@ namespace Actividad3
                 new Emergencia()
             };
 
-            public IEstrategia EstrategiaPura(Cliente cliente); 
+            public IEstrategia EstrategiaPara(Cliente cliente); 
+
+            void first = EstrategiaPara.FirstOrDefault ();
+            
+            
+            
 
         }
 }
