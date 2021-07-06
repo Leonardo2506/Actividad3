@@ -1,8 +1,8 @@
 using System; 
 using System.Collections.Generic;
-using System.Text; 
-using System.Linq; 
-using Actividad3.Estrategias; 
+using System.Text;  
+using System.Linq;
+using Actividad3.Estrategias;
 
 namespace Actividad3 
 {
@@ -14,14 +14,26 @@ namespace Actividad3
 
                 new Cauto(),
 
-                new Emergencia()
+                new Emergencia(),
             };
-
-            public IEstrategia EstrategiaPara(Cliente cliente); 
-            {
-                void first = EstrategiaPara.FirstOrDefault ();
-            }
             
+
+            public IEstrategia EstrategiaPara(Cliente cliente)
+            {
+                List<IEstrategia> TipoEstrategia = Estra.FirstOrDefault(Estra => IEstrategia.EsApto = true );
+
+                return (Estrategia);  
+            } 
+        
+            
+            
+            
+            
+
+            
+                 
+    
+        
             
             
             

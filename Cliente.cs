@@ -29,11 +29,21 @@ namespace  Actividad3
         public void Acreditar(double monto) 
         {
             Estrategia.Acreditar(this, monto);
+
+            if(!IEstrategia.EsApto(this))
+            {
+                
+            }
         } 
 
         public void Debitar(double monto)
         {
             Estrategia.Debitar(this, monto);
+
+            if(!IEstrategia.EsApto(this))
+            {
+                
+            }
         }
 
         public void AcreditarEfectivo(double monto) => Efectivo += monto;
