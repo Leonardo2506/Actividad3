@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Actividad3.Estrategias;
 
-namespace  Actividad3
+namespace  Actividad3.Estrategias
 {
     public class Cliente
     {
@@ -30,9 +30,9 @@ namespace  Actividad3
         {
             Estrategia.Acreditar(this, monto);
 
-            if(!IEstrategia.EsApto(this))
+            if(!Estrategia.EsApto(this))
             {
-                
+                Estrategias.Asignar(this);
             }
         } 
 
@@ -40,9 +40,9 @@ namespace  Actividad3
         {
             Estrategia.Debitar(this, monto);
 
-            if(!IEstrategia.EsApto(this))
+            if(!Estrategia.EsApto(this))
             {
-                
+                Estrategias.Asignar(this); 
             }
         }
 
