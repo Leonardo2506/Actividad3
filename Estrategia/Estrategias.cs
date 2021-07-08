@@ -20,9 +20,7 @@ namespace Actividad3.Estrategias
 
             public static IEstrategia EstrategiaPara(Cliente cliente)
             {
-                return (IEstrategia) (Estra.FirstOrDefault(e => e.EsApto(cliente)));
-
-
+                return (Estra.FirstOrDefault(e => e.EsApto(cliente)));
             }
         }
 }

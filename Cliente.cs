@@ -32,7 +32,7 @@ namespace  Actividad3.Estrategias
 
             if(!Estrategia.EsApto(this))
             {
-                Estrategias.Asignar(this);
+                Estrategias.EstrategiaPara(this);
             }
         } 
 
@@ -42,7 +42,7 @@ namespace  Actividad3.Estrategias
 
             if(!Estrategia.EsApto(this))
             {
-                Estrategias.Asignar(this); 
+                Estrategias.EstrategiaPara(this); 
             }
         }
 
